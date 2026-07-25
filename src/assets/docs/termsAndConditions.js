@@ -122,7 +122,7 @@ We reserve the right, but not the obligation, to: (1) monitor the Site for viola
 
 12. PRIVACY POLICY
 
-We care about data privacy and security. Please review our Privacy Policy:https://instagram.com/ig_ambuj21. By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site is hosted in India. If you access the Site from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in India, then through your continued use of the Site, you are transferring your data to India, and you agree to have your data transferred to and processed in India.
+We care about data privacy and security. Please review our Privacy Policy:https://instagram.com/. By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site is hosted in India. If you access the Site from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in India, then through your continued use of the Site, you are transferring your data to India, and you agree to have your data transferred to and processed in India.
 
 
 13. COPYRIGHT INFRINGEMENTS
@@ -197,8 +197,8 @@ Video Streaming
 asasddasd
 dasdasd, DELHI 4534534
 India
-Phone: 9205337728
-ambuj14sept@gmail.com
+Phone: 9950637083
+adarshvijayvargiya8@gmail.com
 
 `;
 

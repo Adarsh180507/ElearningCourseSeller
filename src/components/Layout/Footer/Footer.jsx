@@ -11,9 +11,9 @@ const Footer = () => {
     <Box padding={'4'} bg={'blackAlpha.900'} minH={'10vh'}>
       <Stack direction={['column', 'row']}>
         <VStack alignItems={['center', 'flex-start']} width={'full'}>
-          <Heading children='All Rights Reserved' color={'white'} />
+          <Heading children="All Rights Reserved" color={'white'} />
           <Heading
-            children='@Ambuj'
+            children="@Adarsh"
             color={'yellow.400'}
             fontFamily={'body'}
             size={'sm'}
@@ -25,13 +25,13 @@ const Footer = () => {
           color={'white'}
           fontSize={'50'}
         >
-          <a href='/' target={'blank'}>
+          <a href="/" target={'blank'}>
             <TiSocialYoutubeCircular />
           </a>
-          <a href='https://www.instagram.com/ig_ambuj21' target={'blank'}>
+          <a href="https://www.instagram.com/" target={'blank'}>
             <TiSocialInstagramCircular />
           </a>
-          <a href='https://github.com/fantom787/' target={'blank'}>
+          <a href="https://github.com/Adarsh180507/" target={'blank'}>
             <DiGithub />
           </a>
         </HStack>

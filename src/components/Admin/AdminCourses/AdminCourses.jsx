@@ -30,7 +30,7 @@ const AdminCourses = () => {
       poster: {
         url: 'https://media.licdn.com/dms/image/D4D03AQGpM3dDOawD5g/profile-displayphoto-shrink_400_400/0/1685465159354?e=1706745600&v=beta&t=4-9WQ5Ws9jZqLruf_9l472nU5gYR2xHeXsMf-Rtzu7o',
       },
-      createdBy: 'Ambuj Kumar',
+      createdBy: 'Adarsh kumar vijayvargiya',
       numOfVideos: 12,
     },
   ];

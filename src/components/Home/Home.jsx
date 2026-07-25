@@ -18,14 +18,6 @@ import { SiCoursera, SiUdemy } from 'react-icons/si';
 import { DiAws } from 'react-icons/di';
 
 const Home = () => {
-  /**
-   *
-   * stack --- this is diplay flex at the end of the day
-   *         direction --> this take the values coloumn / row means that the flex will be col / row
-   *          and other properties are also same
-   *      the array represents the [display when veiw in phone , otherwise]
-   *
-   */
   return (
     <div>
       <section className='home'>
