@@ -71,7 +71,7 @@ course-selling-platform/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<Adarsh180507>/ElearningCourseSeller.git
+git clone https://github.com/Adarsh180507/ElearningCourseSeller.git
 cd ElearningCourseSeller
 
 # Install dependencies
