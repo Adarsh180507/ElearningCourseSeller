@@ -1,37 +1,165 @@
-## Available Scripts
+# 📚 Course Selling Platform
 
-In the project directory, you can run:
+A full-stack e-learning marketplace built on the **MERN stack**, where instructors can create and sell courses, and students can browse, purchase, and securely access content — with integrated payments, cloud media storage, and an analytics dashboard.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 🔐 **Secure authentication** — JWT-based sessions with bcrypt-hashed passwords
+- 🛡️ **Role-based access control** — separate student and admin permissions
+- 🎓 **Course catalog** — browse, filter, and view detailed course pages
+- 💳 **Payments** — checkout and payment verification via Razorpay
+- ☁️ **Media uploads** — course thumbnails/videos uploaded via Multer and stored on Cloudinary
+- 📊 **Admin dashboard** — manage courses and view sales analytics with Chart.js
+- 📧 **Automated emails** — welcome mail, purchase receipts, and OTPs via Nodemailer
+- ⏰ **Scheduled jobs** — background tasks (e.g., cleanup, reminders) via node-cron
+- 🎨 **Polished UI** — responsive, accessible components with Chakra UI and Framer Motion animations
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Layer | Technologies |
+|---|---|
+| **Frontend** | React, React Router DOM, Chakra UI, Emotion, Framer Motion, Chart.js / react-chartjs-2, React Icons |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB, Mongoose |
+| **Auth & Security** | JSON Web Token (JWT), bcrypt, cookie-parser, CORS, validator |
+| **Payments** | Razorpay |
+| **Media Storage** | Cloudinary, Multer, Datauri |
+| **Email** | Nodemailer |
+| **Scheduling** | node-cron |
+| **Dev Tools** | Nodemon, dotenv |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Screenshots
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+> Add screenshots or a demo GIF once your app is deployed — visuals are one of the first things recruiters and visitors look at.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Home Page | Course Detail | Admin Dashboard |
+|---|---|---|
+| _add image_ | _add image_ | _add image_ |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🏗️ Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+course-selling-platform/
+├── client/                  # React frontend
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/           # Route-level pages
+│   │   ├── context/         # Global state (auth, etc.)
+│   │   └── api/             # API request helpers
+│   └── public/
+├── controllers/              # Route business logic
+├── models/                   # Mongoose schemas (User, Course, Purchase)
+├── routes/                   # Express route definitions
+├── middlewares/               # Auth, role checks, error handling, Multer config
+├── config/                   # DB, Cloudinary, Razorpay setup
+├── utils/                    # Helper functions (email, tokens)
+├── server.js                 # App entry point
+├── .env                      # Environment variables (not committed)
+└── package.json
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*(Adjust this to match your actual folder layout.)*
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [MongoDB](https://www.mongodb.com/) (local instance or a MongoDB Atlas connection string)
+- A [Razorpay](https://razorpay.com/) account (test mode keys are fine for development)
+- A [Cloudinary](https://cloudinary.com/) account
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/course-selling-platform.git
+cd course-selling-platform
+
+# Install dependencies
+npm install
+
+# Create your .env file (see Environment Variables below)
+cp .env.example .env
+```
+
+### Running the App
+
+```bash
+# Start the backend (with auto-restart on file changes)
+npm run server
+
+# In a separate terminal, start the React frontend
+npm start
+```
+
+```bash
+# Build the frontend for production
+npm run build
+```
+
+By default the frontend runs on `http://localhost:3000` and the API on whichever port you configure (see below).
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the project root with the following (update with your actual keys):
+
+```env
+# Server
+PORT=5000
+FRONTEND_URL=http://localhost:3000
+
+# Database
+MONGO_URI=your_mongodb_connection_string
+
+# Auth
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRE=7d
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+# Razorpay
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+
+# Email (Nodemailer)
+SMTP_HOST=your_smtp_host
+SMTP_PORT=587
+SMTP_USER=your_smtp_user
+SMTP_PASS=your_smtp_password
+```
+
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm start` | Starts the React frontend (via react-scripts) |
+| `npm run server` | Starts the backend with Nodemon (auto-restarts on changes) |
+| `npm run build` | Builds the frontend for production |
+
+
+## 🗺️ Roadmap
+
+- [ ] Course ratings and reviews
+- [ ] Coupon / discount code support
+- [ ] Progress tracking per lecture
+- [ ] Certificate generation on course completion
+- [ ] Instructor payout dashboard
+
+## 🧑‍💻 Author
+
+**Adarsh Vijayvargiya**
