@@ -71,8 +71,8 @@ course-selling-platform/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/course-selling-platform.git
-cd course-selling-platform
+git clone https://github.com/<Adarsh180507>/ElearningCourseSeller.git
+cd ElearningCourseSeller
 
 # Install dependencies
 npm install
