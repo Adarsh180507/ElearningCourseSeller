@@ -32,16 +32,6 @@ A full-stack e-learning marketplace built on the **MERN stack**, where instructo
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots or a demo GIF once your app is deployed — visuals are one of the first things recruiters and visitors look at.
-
-| Home Page | Course Detail | Admin Dashboard |
-|---|---|---|
-| _add image_ | _add image_ | _add image_ |
-
----
-
 ## 🏗️ Project Structure
 
 ```
